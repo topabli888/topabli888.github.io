@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Habla · Dictado por voz y traductor</title>
+<meta name="description" content="Habla convierte tu voz en texto, traduce al momento y lo lee en voz alta. Dictado, traductor, intérprete y modo Oído en una sola app para Android.">
+<meta property="og:title" content="Habla · Dictado por voz y traductor">
+<meta property="og:description" content="Habla, traduce y escucha en cualquier idioma.">
+<link rel="icon" href="icono.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+<header class="cabecera" id="cabecera">
+  <div class="contenedor">
+    <a class="marca" href="#"><img src="icono.svg" alt="">Habla<span>.</span></a>
+    <nav class="menu">
+      <a href="#funciones">Funciones</a>
+      <a href="#como">Cómo funciona</a>
+      <a href="#privacidad">Privacidad</a>
+      <a href="#preguntas">Preguntas</a>
+      <a class="btn btn-principal" href="#descargar">Descargar</a>
+    </nav>
+  </div>
+</header>
+
+<section class="portada">
+  <div class="contenedor">
+    <div>
+      <span class="chip"><i></i>Próximamente en Google Play</span>
+      <h1>Habla. Traduce.<br><em>Entiende a cualquiera.</em></h1>
+      <p class="lema">Habla convierte tu voz en texto limpio, lo traduce al instante y lo lee en voz alta. Dictado, traductor e intérprete en una app sencilla, sin cuentas ni anuncios.</p>
+      <div class="acciones">
+        <a class="btn btn-principal" href="#descargar">Descargar la app</a>
+        <a class="btn btn-sec" href="#funciones">Ver funciones</a>
+      </div>
+      <div class="confianza">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Gratis</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Sin registro</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Sin publicidad</span>
+      </div>
+    </div>
+
+    <div class="telefono" aria-hidden="true">
+      <div class="pantalla">
+        <div class="app-titulo">Habla<span>.</span></div>
+        <div class="pestanas"><b>Dictar</b><b class="on">Traducir</b><b>Intérprete</b><b>Oído</b></div>
+        <div class="tarjeta"><small>Lo que dijiste · Español</small><span class="escribe" id="dicho"></span></div>
+        <div class="tarjeta"><small>Traducción · Inglés</small><span id="traducido"></span></div>
+        <div class="tarjeta" style="display:flex;justify-content:space-between;align-items:center"><small style="margin:0">Escuchando</small><div class="barras"><i></i><i></i><i></i><i></i><i></i></div></div>
+        <div class="mic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="funciones" class="blanco">
+  <div class="contenedor">
+    <div class="cabeza aparece">
+      <span class="chip">Funciones</span>
+      <h2>Cuatro formas de comunicarte</h2>
+      <p>Elige el modo que necesitas y pulsa el micrófono. Habla se encarga del resto.</p>
+    </div>
+    <div class="modos">
+      <div class="modo aparece">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg></div>
+        <h3>Dictar</h3>
+        <p>Habla y obtén el texto limpio, listo para copiar en mensajes, correos o notas.</p>
+      </div>
+      <div class="modo aparece">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h8M8 3v2M6 5c0 4 3 7 6 8M10 5c0 3-3 7-6 8"/><path d="m13 21 4-9 4 9M14.5 18h5"/></svg></div>
+        <h3>Traducir</h3>
+        <p>Di una frase y tenla traducida al momento, con opción de escucharla en voz alta.</p>
+      </div>
+      <div class="modo aparece">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.4A8 8 0 1 1 21 12Z"/><path d="M9 11h.01M12 11h.01M15 11h.01"/></svg></div>
+        <h3>Intérprete</h3>
+        <p>Conversa con alguien que habla otro idioma: Habla alterna los idiomas y lee cada respuesta.</p>
+      </div>
+      <div class="modo aparece">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14v-2a9 9 0 0 1 18 0v2"/><path d="M21 15a2 2 0 0 1-2 2h-1v-5h1a2 2 0 0 1 2 2ZM3 15a2 2 0 0 0 2 2h1v-5H5a2 2 0 0 0-2 2Z"/></svg></div>
+        <h3>Oído</h3>
+        <p>Escucha a quien te habla en otro idioma y te lo dice en español por los auriculares.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="como">
+  <div class="contenedor">
+    <div class="cabeza aparece">
+      <span class="chip">Cómo funciona</span>
+      <h2>Listo en tres pasos</h2>
+    </div>
+    <div class="pasos">
+      <div class="paso aparece"><h3>Elige los idiomas</h3><p>Español, inglés, portugués, ruso, árabe y muchos más.</p></div>
+      <div class="paso aparece"><h3>Pulsa y habla</h3><p>Toca el micrófono y habla con normalidad. El texto aparece mientras hablas.</p></div>
+      <div class="paso aparece"><h3>Copia, traduce o escucha</h3><p>Copia el texto, mira la traducción o deja que Habla lo lea en voz alta.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="privacidad" class="blanco">
+  <div class="contenedor privado">
+    <div class="aparece">
+      <span class="chip">Privacidad</span>
+      <h2>Tu voz es tuya</h2>
+      <p>Habla no tiene cuentas, ni anuncios, ni seguimiento. Tus ajustes y tu historial se quedan en tu teléfono.</p>
+      <a class="btn btn-sec" href="privacy.html">Leer la política de privacidad</a>
+    </div>
+    <div class="lista aparece">
+      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg><p style="margin:0"><b>Sin registro</b><span>No pedimos nombre, correo ni contraseña.</span></p></div>
+      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg><p style="margin:0"><b>Datos en tu dispositivo</b><span>El historial y los ajustes se guardan solo en tu móvil.</span></p></div>
+      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m5.6 5.6 12.8 12.8"/></svg><p style="margin:0"><b>Sin anuncios ni rastreo</b><span>No usamos publicidad ni herramientas de análisis.</span></p></div>
+      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0"/></svg><p style="margin:0"><b>Micrófono solo cuando tú quieres</b><span>Solo escucha al pulsar el botón. No grabamos ni guardamos audio.</span></p></div>
+    </div>
+  </div>
+</section>
+
+<section id="preguntas">
+  <div class="contenedor">
+    <div class="cabeza aparece">
+      <span class="chip">Preguntas frecuentes</span>
+      <h2>¿Tienes dudas?</h2>
+    </div>
+    <div class="preguntas aparece">
+      <details><summary>¿Habla es gratis?</summary><p>Sí. Habla se descarga gratis y no tiene anuncios. Todas sus funciones principales se pueden usar sin pagar.</p></details>
+      <details><summary>¿Necesito internet?</summary><p>Sí. El reconocimiento de voz de tu móvil y el traductor necesitan conexión para funcionar.</p></details>
+      <details><summary>¿Qué idiomas puedo usar?</summary><p>Los que admita el reconocimiento de voz de tu dispositivo Android: español, inglés, portugués, francés, ruso, árabe y muchos más.</p></details>
+      <details><summary>¿Hay un límite de traducciones?</summary><p>El servicio de traducción gratuito tiene un límite diario generoso. Si lo alcanzas, Habla te avisa y al día siguiente vuelve a estar disponible.</p></details>
+      <details><summary>¿Cómo borro mis datos?</summary><p>Desde Ajustes de Android → Aplicaciones → Habla → Almacenamiento → Borrar datos, o desinstalando la app.</p></details>
+    </div>
+  </div>
+</section>
+
+<section id="descargar" class="final">
+  <div class="contenedor">
+    <div class="caja aparece">
+      <h2>Empieza a hablar sin barreras</h2>
+      <p>Habla llegará muy pronto a Google Play. ¿Quieres probarla antes? Escríbenos y te avisamos.</p>
+      <div class="acciones" style="justify-content:center">
+        <span class="tienda"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 2.5v19l10-9.5L4 2.5Zm11.4 8.2L6.6 2.2l11 6.3-2.2 2.2Zm0 2.6 2.2 2.2-11 6.3 8.8-8.5Zm3.4-3.9 2.7 1.6c.7.4.7 1.6 0 2l-2.7 1.6-2.4-2.6 2.4-2.6Z"/></svg><span><small>Próximamente en</small><b>Google Play</b></span></span>
+        <a class="btn btn-sec" href="mailto:tocolex888@gmail.com?subject=Quiero%20probar%20Habla">Quiero probarla</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="contenedor">
+    <span>© 2026 Habla. Todos los derechos reservados.</span>
+    <nav>
+      <a href="privacy.html">Política de privacidad</a>
+      <a href="mailto:tocolex888@gmail.com">tocolex888@gmail.com</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+const cab = document.getElementById("cabecera");
+addEventListener("scroll", () => cab.classList.toggle("borde", scrollY > 10));
+
+const obs = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("visible"); obs.unobserve(e.target); } }), { threshold: 0.15 });
+document.querySelectorAll(".aparece").forEach(el => obs.observe(el));
+
+// Demostración en el teléfono: escribe una frase y su traducción
+const frases = [["¿Dónde está la estación de tren?", "Where is the train station?"], ["Me encantaría probar la comida local.", "I would love to try the local food."], ["¿Puedes hablar un poco más despacio?", "Can you speak a little slower?"]];
+const dicho = document.getElementById("dicho"), trad = document.getElementById("traducido");
+let n = 0;
+function demo() {
+  const [es, en] = frases[n++ % frases.length];
+  let i = 0; dicho.textContent = ""; trad.textContent = "";
+  const t = setInterval(() => { dicho.textContent = es.slice(0, ++i); if (i >= es.length) { clearInterval(t); setTimeout(() => { trad.textContent = en; setTimeout(demo, 2600); }, 500); } }, 55);
+}
+demo();
+</script>
+</body>
+</html>
